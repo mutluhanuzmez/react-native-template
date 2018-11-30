@@ -2,14 +2,7 @@ import React, { Component } from 'react';
 import Dimensions from 'Dimensions';
 import { connect } from 'react-redux';
 import { auth, navigateToPage, animateStart } from '../../../state/actions';
-import {
-  TouchableOpacity,
-  Text,
-  Animated,
-  Easing,
-  View,
-  ActivityIndicator
-} from 'react-native';
+import { TouchableOpacity, Text, Animated, Easing, View, ActivityIndicator } from 'react-native';
 import styles from './styles';
 
 
@@ -23,9 +16,7 @@ const ButtonSubmit = props => {
 
   _onPress = () => {
     if (props.loading) return;
-
     props.auth(props.email, props.password, buttonAnimated, growAnimated, props.navigateTo);
-
     props.animateStart(buttonAnimated, 1, 200, Easing.linear);
   }
 
@@ -58,7 +49,6 @@ const ButtonSubmit = props => {
     </View>
   );
 }
-
 
 const mapStateToProps = state => {
   return {
