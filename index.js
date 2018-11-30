@@ -1,18 +1,15 @@
-/** @format */
+import React from 'react';
+import { AppRegistry } from 'react-native';
+import { Provider } from 'react-redux';
+import App from './App';
+import configureStore from './src/state/configureStore';
 
-import { Navigation } from "react-native-navigation";
-import LoginScreen from './src/containers/LoginScreen';
-import WelcomeScreen from './src/containers/WelcomeScreen';
+const store = configureStore();
 
-Navigation.registerComponent(`basestech.LoginScreen`, () => LoginScreen);
-Navigation.registerComponent(`basestech.WelcomeScreen`, () => WelcomeScreen);
+const RNRedux = () => (
+    <Provider store={store}>
+        <App />
+    </Provider>
+);
 
-Navigation.events().registerAppLaunchedListener(() => {
-      Navigation.setRoot({
-            root: {
-              component: {
-                name: "basestech.LoginScreen"
-              }
-            }
-      });
-});
+AppRegistry.registerComponent('basestech', () => RNRedux);

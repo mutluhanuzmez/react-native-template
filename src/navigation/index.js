@@ -1,9 +1,9 @@
 import { Navigation } from 'react-native-navigation';
 
-export const goToWelcome = () => Navigation.setRoot({
+export const setRoot = ( name ) => Navigation.setRoot({
     root: {
         component: {
-            name: 'basestech.WelcomeScreen',
+            name: name,
         }
     }
 })
