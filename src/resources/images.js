@@ -1,5 +1,5 @@
 const images = {
-    logo: require('./images/basestech_logo.png'),
+    logo: require('./images/logo.png'),
     eye_black: require('./images/eye_black.png'),
     left_arrow: require('./images/left_arrow.png'),
     loading: require('./images/loading.gif'),

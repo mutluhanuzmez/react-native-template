@@ -27,10 +27,6 @@ export const to = (promise) => {//global function that will help use handle prom
 }
 
 export const config = (token) => {
-    // if(AsyncStorage.getItem('agrosys:auth:token'!=null)){
-    //     bearerToken = AsyncStorage.getItem('agrosys:auth:token');
-    // }
-    // bearerToken=token;
     return {
         headers: {
             'Authorization': token
@@ -38,4 +34,4 @@ export const config = (token) => {
     }
 }
 
-export const URL = 'http://agrosys.cloud:3000/v1/';
+export const URL = 'requestURL';
