@@ -1,4 +1,4 @@
-export { Logo  } from './Logo';
+export { Logo } from './Logo';
 export { Form } from './Form';
 export { Wallpaper } from './Wallpaper';
 export { ButtonSubmit } from './ButtonSubmit';

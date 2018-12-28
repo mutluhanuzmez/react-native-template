@@ -10,11 +10,7 @@ import {
 import { setEmail, setPassword, showPassword } from '../../../state/actions';
 
 import styles from './styles';
-
 import UserInput from '../UserInput';
-import usernameImg from '../../../resources/images/username.png';
-import passwordImg from '../../../resources/images/password.png';
-import eyeImg from '../../../resources/images/eye_black.png';
 import images from '../../../resources/images';
 
 const Form = props => {
